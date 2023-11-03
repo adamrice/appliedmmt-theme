@@ -12,5 +12,5 @@ jobs:
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v1
         with:
-          api-url: https://appliedmmt.com
-          api-key: ${{ 65431d664a42170f3d5a45a7:cc2ec651a556a2eb67b08bae650df3c6e270ac8028ae7cf4628743a7b6b1cc88}}
+          api-url: ${{ secrets.GHOST_ADMIN_API_URL}}
+          api-key: ${{ secrets.GHOST_ADMIN_API_KEY}}
