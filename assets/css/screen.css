@@ -2047,8 +2047,8 @@ iframe.instagram-media + script + :not([id]) {
 .site-footer {
     position: relative;
     margin: max(12vmin, 64px) 0 0 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     color: #045ccf;
     background: #045ccf;
 }

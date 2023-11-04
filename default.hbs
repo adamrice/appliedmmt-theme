@@ -16,6 +16,7 @@
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" href="{{asset "css/ghost-dropdown.css"}}">
 
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
     it should always be the last tag before the closing head tag --}}
@@ -101,6 +102,7 @@
     crossorigin="anonymous">
 </script>
 <script src="{{asset "built/casper.js"}}"></script>
+<script src="{{asset "js/ghost-dropdown.js"}}"></script>
 <script>
 $(document).ready(function () {
     // Mobile Menu Trigger
