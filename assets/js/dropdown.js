@@ -379,9 +379,18 @@
             multi_level: true,
             mega_menu: true
         });
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            document.querySelectorAll(".menu-item-has-children > a").forEach((elm)=>{
+                elm.innerHTML += "<svg class='m-svg' width='19' height='10' viewBox='0 0 19 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.74805 1.52002L9.54883 9.00002L17.3496 1.52002' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+                elm.addEventListener("click",(event)=>{
+                    event.preventDefault()
+                    event.target.parentElement.classList.toggle("show-submenu")
+                })
+            })
+        }
+        
+        document.body.classList.add('is-dropdown-loaded');
     });
 
 
 }(jQuery));
-
-document.body.classList.add('is-dropdown-loaded');
