@@ -387,6 +387,13 @@
                     event.target.parentElement.classList.toggle("show-submenu")
                 })
             })
+            // for the svg
+            document.querySelectorAll(".m-svg").forEach((elm)=>{
+                elm.addEventListener("click",(event)=>{
+                    event.preventDefault()
+                    event.target.parentElement.parentElement.classList.toggle("show-submenu")
+                })
+            })
         }
         
         document.body.classList.add('is-dropdown-loaded');
